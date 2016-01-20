@@ -1,0 +1,351 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/css?family=Dosis);
+
+/*--------------- TEMP*/
+*
+{
+	padding: 0;
+	margin: 0;
+	outline: none;
+	border: none;
+
+	-webkit-user-select: none;
+	user-select: none;
+
+	-webkit-touch-callout: none;
+	touch-callout: none;
+}
+
+html, body
+{
+	background: #fff;
+}
+
+/*--------------- TEMP*/
+
+
+
+.startScreen_wrapper
+{
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+
+	left: 0; right: 0; top: 0; bottom: 0;
+
+	margin: auto;
+}
+
+.startScreen_cont_entrance, .startScreen_cont_main
+{
+	width: inherit;
+	height: inherit;
+
+	font-size: 14px;
+
+	position: absolute;
+
+	left: 0; right: 0; top: 0; bottom: 0;
+
+	margin: auto;
+}
+
+.startScreen_cont_hide
+{
+	opacity: 0;
+
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.startScreen_cont_show
+{
+	opacity: 1;
+
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+}
+
+.tween-startScreen_cont
+{
+	-webkit-transition: 600ms ease-in-out;
+	transition: 600ms ease-in-out;
+}
+
+.startScreen_cont_entrance
+{
+	background: #20202a;
+}
+
+.startScreen_cont_entrance .startScreen_deco_tr, .startScreen_cont_entrance .startScreen_deco_bl
+{
+	width: 40px;
+	height: 40px;
+
+	position: absolute;
+}
+
+.startScreen_cont_entrance .startScreen_deco_tr
+{
+	left: 0; right: 0; top: 0; bottom: 0;
+
+	margin: 40px 40px auto auto;
+
+	background-position: 0 -320px;
+}
+
+.startScreen_cont_entrance .startScreen_deco_bl
+{
+	left: 0; right: 0; top: 0; bottom: 0;
+
+	margin: auto auto 40px 40px;
+
+	background-position: -40px -320px;
+}
+
+.startScreen_cont_entrance .startScreen_tl
+{
+	width: 40%;
+
+	position: absolute;
+
+	left: 0; right: 0; top: 0; bottom: 0;
+
+	margin: 40px auto auto 40px;
+}
+
+.startScreen_cont_entrance .startScreen_tl p
+{
+	font-size: 1em;
+	letter-spacing: 0.1em;
+	line-height: 1.6em;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+.startScreen_cont_entrance .startScreen_tl p:first-of-type
+{
+	color: #ffff66;
+	margin-bottom: 3em;
+}
+
+.startScreen_cont_entrance .startScreen_tl p:last-of-type
+{
+	color: #fff;
+}
+
+.startScreen_cont_entrance .startScreen_tl input:last-of-type
+{
+	
+
+}
+
+
+.startScreen_tl_show
+{
+	opacity: 1;
+
+	-webkit-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.startScreen_tl_hide
+{
+	opacity: 0;
+
+	-webkit-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.tween-startScreen_cont_entrance_tl
+{
+	-webkit-transition: 400ms ease-in-out;
+	transition: 400ms ease-in-out;
+}
+
+.startScreen_tl_delay
+{
+	-webkit-transition-delay: 200ms;
+	transition-delay: 200ms;
+}
+
+
+.startScreen_cont_entrance .startScreen_br
+{
+	position: absolute;
+
+	right: 40px; bottom: 40px;
+
+	/*margin: 0 40px 40px 0;*/
+
+}
+
+.startScreen_cont_entrance .startScreen_br .startScreen_soundOption
+{
+	font-size: 6em;
+	letter-spacing: 0.1em;
+	line-height: 1;
+	text-align: right;
+	text-transform: uppercase;
+
+	display: inline;
+
+	margin: auto 0 0 auto;
+
+	position: relative;
+
+	cursor: pointer
+}
+
+.startScreen_cont_entrance .startScreen_br p:first-of-type
+{
+	margin-right: 0.4em;
+}
+
+.startScreen_cont_entrance .startScreen_soundOption_false
+{
+	color: #17e69d;
+}
+
+.startScreen_cont_entrance .startScreen_soundOption_true
+{
+	color: #ff0070;
+}
+
+.startScreen_cont_entrance .startScreen_soundOption_true:hover
+{
+	color: #fff;
+}
+
+.startScreen_cont_entrance .startScreen_soundOption_false:hover
+{
+	color: #ffff66;
+}
+
+.startScreen_soundOption_hide
+{
+	opacity: 0;
+
+	-webkit-transform: translateY(20px);
+	transform: translateY(20px);
+}
+
+.startScreen_soundOption_show
+{
+	opacity: 1;
+
+	-webkit-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+.tween-startScreen_cont_entrance_br
+{
+	-webkit-transition: 400ms ease-in-out;
+	transition: 400ms ease-in-out;
+}
+
+.startScreen_br_delay
+{
+	-webkit-transition-delay: 200ms;
+	transition-delay: 200ms;
+}
+
+
+.startScreen_optionDisabled
+{
+	cursor: default;
+	pointer-events: none;
+}
+
+
+
+/*--------------- RECYCLED*/
+
+	.font-dosis
+	{
+		font-family: 'Dosis', sans-serif;
+
+		font-weight: lighter;
+		font-variant: normal;
+		font-style: normal;
+
+		-webkit-font-smoothing	: antialiased;
+		font-smoothing			: antialiased;
+	}
+
+
+
+/*PIXELS*/
+
+		.pixels_portalZombie
+	{
+		background-image: url(../_img/portalZombieSprite_1x.png);
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size: 80px 360px;
+	}
+
+	@media all and (-webkit-min-device-pixel-ratio: 1), all and (min-device-pixel-ratio: 1)
+	{
+		.pixels_portalZombie
+		{
+			background-image: url(http://simonkinslow.com/_2014/options/_assets/_img/portalZombieSprite_1x.png);
+		}
+	}
+
+	@media all and (-webkit-min-device-pixel-ratio: 2), all and (min-device-pixel-ratio: 2)
+	{
+		.pixels_portalZombie
+		{
+			background-image: url(http://simonkinslow.com/_2014/options/_assets/_img/portalZombieSprite_2x.png);
+		}
+	}
+
+/*--------------- RECYCLED*/
+
+/*--------------- RESPONSIVE*/
+
+
+@media screen and (max-width:700px)
+{
+	.startScreen_cont_entrance .startScreen_br
+	{
+		width: 50%;
+
+		left: 40px; bottom: 40px; right: auto;
+
+		/*margin: 0 0 40px 40px;*/
+	}
+
+	.startScreen_cont_entrance .startScreen_deco_bl
+	{
+		margin: auto 40px 40px auto;
+	}
+
+	.startScreen_cont_entrance .startScreen_br .startScreen_soundOption
+	{
+		font-size: 5em;
+	}
+}
+
+@media screen and (max-width:500px)
+{
+	.startScreen_cont_entrance .startScreen_tl
+	{
+		width: 70%;
+	}
+
+	.startScreen_cont_entrance .startScreen_deco_tr, .startScreen_cont_entrance .startScreen_deco_bl
+	{
+		visibility: hidden;
+	}
+
+	.startScreen_cont_entrance .startScreen_br .startScreen_soundOption
+	{
+		font-size: 4em;
+	}
+}
+
+/*--------------- RESPONSIVE*/
+
